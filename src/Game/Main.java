@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Main extends JFrame{
+public class Main extends JFrame {
     private JLabel Title;
     private JPanel Control;
 
@@ -64,7 +64,7 @@ public class Main extends JFrame{
         new About().setVisible(true);
     }
 
-    public void change(){
+    public void change() {
 
     }
 

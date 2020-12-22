@@ -107,20 +107,13 @@ public class Board extends JFrame {
         int delay = 800; //milliseconds
         if (Catcher.size() == 2) {
             if (Catcher.get(0).matched(Catcher.get(1))) {
-                ActionListener taskPerformer = new ActionListener() {
-                    public void actionPerformed(ActionEvent evt) {
                         for (Card card : Deck) {
                             if (card.isFaceUp) {
-                                card.setIcon(null);
                                 card.isMatched = true;
                                 card.cantClick = true;
                             }
                         }
-                    }
-                };
-                if (timer != null) timer.stop();
-                timer = new Timer(delay, taskPerformer);
-                timer.start();
+
 
             } else {
                 flipBack.addAll(Catcher);
