@@ -141,8 +141,6 @@ public class Board extends JFrame {
                 timer.start();
             }
             Catcher.removeAll(Catcher);
-
-
         }
     }
 
