@@ -64,10 +64,6 @@ public class Main extends JFrame {
         new About().setVisible(true);
     }
 
-    public void change() {
-
-    }
-
     public static void main(String[] args) {
         Main main = new Main();
     }
